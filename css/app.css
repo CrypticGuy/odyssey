@@ -1,3 +1,258 @@
+.c-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding: 40px;
+  height: 100%;
+  text-transform: lowercase;
+  -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 999; }
+
+.c-navigation__top {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1; }
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  -webkit-transition: color 350ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: color 350ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: color 350ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.c-navigation__logo {
+  border: 0;
+  display: block;
+  width: 100px; }
+
+.c-navigation__link--menu {
+  display: none; }
+
+.c-navigation__link {
+  border: 0;
+  color: #fff;
+  display: block;
+  font-family: PT Mono;
+  font-size: 0.88889em; }
+
+.c-navigation__link + .c-navigation__link {
+  margin-top: 10px; }
+
+.c-navigation__link--share {
+  display: none; }
+
+.c-navigation__top::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.c-navigation__middle {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  flex-grow: 2; }
+
+.c-navigation__links-group + .c-navigation__links-group {
+  margin-top: 20px; }
+
+.c-navigation__bottom {
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1; }
+
+.c-navigation__share {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  text-transform: lowercase;
+  -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 999; }
+
+.c-navigation__share .c-navigation__link {
+  color: #aaa; }
+
+.u-side-padding {
+  padding-left: 250px; }
+
+.c-intro {
+  height: 100vh;
+  width: 100%;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative; }
+
+.c-intro__text-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1080px;
+  width: 100%; }
+
+.c-landing [data-animate].c-intro__date {
+  -webkit-animation: opacity 600ms forwards cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  animation: opacity 600ms forwards cubic-bezier(0.23, 1, 0.32, 1) 100ms; }
+
+.c-intro__date {
+  font-size: 1.26563em;
+  margin-bottom: 15px;
+  z-index: 100;
+  font-family: Montserrat;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: none; }
+
+.c-intro__heading {
+  width: 600px; }
+
+.c-block-heading {
+  line-height: 0;
+  white-space: pre-line; }
+
+h1, .c-cta__paragraph, .c-cta__title, .c-share__title {
+  font-size: 2.56578em; }
+
+.c-landing [data-animate] .c-block-heading__line.is-animated {
+  opacity: 1; }
+
+.c-block-heading__line {
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #fff;
+  letter-spacing: .5px;
+  font-family: Montserrat;
+  display: inline-block;
+  line-height: 1.6;
+  position: relative;
+  -webkit-transition: all 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1; }
+
+.c-block-heading__line + .c-block-heading__line {
+  margin-top: 5px; }
+
+.c-block-heading__line--purple {
+  background-color: #7500D8; }
+
+.c-block-heading__line--coral {
+  background: #EB484D; }
+
+button, [type='button'], [type='reset'], [type='submit'], .c-button {
+  font-size: 0.88889em;
+  font-family: PT Mono;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #EB484D;
+  border: 0;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 350ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: background-color 350ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: background-color 350ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.c-intro__cta {
+  margin-top: 5px; }
+
+.c-button--white {
+  background-color: #fff;
+  color: #111; }
+
+.c-button__icon {
+  fill: currentColor;
+  margin-left: 15px;
+  width: 8px; }
+
+.c-intro__image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  max-height: 85%;
+  max-width: 90%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0; }
+
+.c-landing [data-animate].c-intro__image.is-animated, .c-landing [data-animate].c-intro__image-credit.is-animated {
+  opacity: 1; }
+
+.c-intro__image img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative; }
+
+.c-intro__image-credit {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  color: #888;
+  display: block;
+  font-size: 11px; }
+
 *,
 *::after,
 *::before {
@@ -9,6 +264,14 @@
 @font-face {
   font-family: Montserrat;
   src: url(head.ttf); }
+
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(head_bold.ttf); }
+
+@font-face {
+  font-family: Campton;
+  src: url(gt.ttf); }
 
 @font-face {
   font-family: 'fontello';
@@ -54,7 +317,7 @@ body {
     .main .centered h1 {
       font-size: 17rem;
       letter-spacing: -35px;
-      font-family: Montserrat;
+      font-family: "Montserrat";
       text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
       line-height: 0;
       -webkit-animation: glitch1 2.5s infinite;
@@ -470,13 +733,40 @@ body {
   transform: rotate(-135deg); }
 
 .about {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   display: table; }
-  .about div {
+  .about .centered {
     display: table-cell;
-    width: 33.33333%;
-    float: left; }
+    vertical-align: middle;
+    text-align: center; }
+    .about .centered h1 {
+      background: #5f2c82;
+      font-family: "Montserrat Bold";
+      letter-spacing: -.02em;
+      font-size: 5rem;
+      background: #fc4a1a;
+      font-weight: normal;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-gradient(linear, left top, right top, from(#f7b733), to(#fc4a1a));
+      background: -webkit-linear-gradient(left, #f7b733, #fc4a1a);
+      background: -o-linear-gradient(left, #f7b733, #fc4a1a);
+      background: linear-gradient(to right, #f7b733, #fc4a1a);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .about .centered h1 span {
+        padding-bottom: 6px;
+        border-bottom: 5px solid rgba(255, 255, 255, 0.13); }
+    .about .centered p.lead {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.4);
+      font-family: Campton;
+      letter-spacing: -.2px;
+      padding: 1.6rem 16rem 0 16rem; }
 
 .social--links {
   position: absolute;
@@ -496,16 +786,10 @@ body {
       width: 1em;
       margin-right: .2em;
       text-align: center;
-      /* opacity: .8; */
-      /* For safety - reset parent styles, that can break glyph codes*/
       font-variant: normal;
       text-transform: none;
-      /* fix buttons height, for twitter bootstrap */
       line-height: 1em;
-      /* Animation center compensation - margins should be symmetric */
-      /* remove if not needed */
       margin-left: .2em;
-      /* You can be more comfortable with increased icons size */
       font-size: 120%;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -517,16 +801,55 @@ body {
   animation-name: yello;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  background: #FCF8F2; }
+  background: #040404; }
+
+.kuku_button {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: PT Mono;
+  font-size: .9rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 13px 25px;
+  background: transparent;
+  border: 2px solid #fff;
+  top: -3px;
+  right: 3px;
+  margin-right: 10px; }
+  .kuku_button:hover {
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 0 rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 0 rgba(255, 255, 255, 0);
+    opacity: 1; }
+
+.blacc {
+  background: rgba(255, 255, 255, 0.888);
+  color: #222; }
 
 @-webkit-keyframes yello {
   0% {
     background: #000; }
   100% {
-    background: #FCF8F2; } }
+    background: #040404; } }
 
 @keyframes yello {
   0% {
     background: #000; }
   100% {
-    background: #FCF8F2; } }
+    background: #040404; } }
+
+.divider {
+  width: 100%;
+  height: 40vh;
+  display: table; }
+  .divider .overlay {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); }
+
+.uno {
+  background: url(bg1.gif) center center no-repeat fixed;
+  background-size: cover; }

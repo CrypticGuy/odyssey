@@ -39,7 +39,7 @@ a:focus {
 	pointer-events: none;
 }
 
-main {
+main.nav {
 	z-index: 1;
 	/*display: */
 	opacity: 0;
