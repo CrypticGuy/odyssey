@@ -567,9 +567,7 @@
 }
 
 .fadeIn {
-  animation-name: fadeIn;
-  z-index: 1000 !important;
-  
+  animation-name: fadeIn;  
 }
 
 @keyframes fadeInDown {
@@ -607,7 +605,7 @@
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-5px, 0, 0);
   }
 
   to {
