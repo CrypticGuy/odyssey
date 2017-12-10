@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .35s ease-in-out;
 }
 
 $font: 'Montserrat';
@@ -482,3 +483,5 @@ body {
     background: url(bg1.gif) center center no-repeat fixed;
     background-size: cover;
 }
+
+
