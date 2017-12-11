@@ -308,7 +308,7 @@
 			
 			setTimeout(function() {
 				initTilt();
-			}, 60);
+			}, 10);
 			isNavigating = false;
 		});
 	}

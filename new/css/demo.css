@@ -6,8 +6,8 @@
 }
 
 body {
-	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: 0.1em;
+	font-family: 'GT Walsheim', sans-serif;
+	/*letter-spacing: 0.1em;*/
 	color: #1f1f21;
 	background: #cecece;
 	height: 100vh;
@@ -145,8 +145,9 @@ a:focus {
 
 .room__side--left,
 .room__side--right {
-	width: 4000px; /* depth */
+	width: 	4000px; /* depth */
 	height: 100vh;
+	display: none;
 	background: #dbdbdb;
 }
 
@@ -368,12 +369,10 @@ a:focus {
 }
 
 .overlay--info {
-	background: rgba(23,94,236,0.4);
+	background: rgba(0,0,0,0.8);
+	/*background: rgba(23,94,236,0.4);*/
 }
 
-.overlay--menu {
-	background: rgba(255,25,25,0.66);
-}
 
 .js .overlay--active {
 	pointer-events: auto;
@@ -418,7 +417,7 @@ a:focus {
 }
 
 .loader {
-	display: none;
+	display: flex;
 }
 
 .loader div {
