@@ -1,4 +1,3 @@
-@import url("raghav.css");
 *,
 *::after,
 *::before {
@@ -156,7 +155,7 @@ a:focus {
 	height: 100vh;
 	background: #e9e9e9;
 	box-shadow: 0 0 0 2px #e9e9e9;
-	transform: translate3d(0, 0, -4000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);
+	/*transform: translate3d(0, 0, -4000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);*/
 	/* Rotation due to rendering bug in Chrome when loader slides up (images seem cut off) */
 }
 
@@ -188,11 +187,11 @@ a:focus {
 /* Inner elements */
 .room__img {
 	flex: none;
-	max-width: 40%;
-    max-height: 60%;
+	max-width: 100%;
+  max-height: 60%;
 	margin: 0 5%;
 	transform: translate3d(0,0,10px);
-	backface-visibility: hidden;
+	/*backface-visibility: hidden;*/
 }
 
 /* Content */
@@ -208,19 +207,19 @@ a:focus {
 }
 
 /* Header */
-.codrops-header {
+.kuku-header {
 	display: flex;
 	align-items: center;
 }
 
-.codrops-header__title {
+.kuku-header__title {
 	font-size: 1.165em;
 	font-weight: normal;
 	margin: 0.5em 0 0 0;
 }
 
 /* Top Navigation Style */
-.codrops-links {
+.kuku-links {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -233,7 +232,7 @@ a:focus {
 	background: #fff;
 }
 
-.codrops-links::after {
+.kuku-links::after {
 	content: '';
 	position: absolute;
 	top: -5%;
@@ -244,7 +243,7 @@ a:focus {
 	transform: rotate3d(0,0,1,22.5deg);
 }
 
-.codrops-icon {
+.kuku-icon {
 	display: inline-block;
 	padding: 0 0.65em;
 }
@@ -419,7 +418,7 @@ a:focus {
 }
 
 .loader {
-	display: flex;
+	display: none;
 }
 
 .loader div {
@@ -452,7 +451,7 @@ a:focus {
 	.subject {
 		display: none;
 	}
-	.codrops-links {
+	.kuku-links {
 		margin: 0 0.5em 0 0;
 	}
 	.btn--info {
