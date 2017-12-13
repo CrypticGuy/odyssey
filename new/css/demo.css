@@ -3,6 +3,7 @@
 *::before {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	/*font-weight: normal;*/
 }
 
 body {
@@ -70,7 +71,7 @@ a:focus {
 .nav__triangle,
 .nav__line {
 	transition: transform 0.3s;
-	fill: currentColor;
+	fill: #fff;
 }
 
 .btn--nav:hover .nav__triangle {
@@ -374,15 +375,15 @@ a:focus {
 
 .overlay--info {
 	background: rgba(0,0,0,0.8);
-	/*background: rgba(23,94,236,0.4);*/
 }
-
 
 .js .overlay--active {
 	pointer-events: auto;
 	opacity: 1;
 }
-
+.icon--menu {
+	fill: #fff;
+}
 .menu {
 	margin: 0;
 	padding: 0;
@@ -391,22 +392,24 @@ a:focus {
 
 .menu__item {
 	font-size: 7vh;
+	letter-spacing: -2px;
+	font-family: Montserrat;
 	margin: 0.25em 0;
 	padding: 0;
 	text-transform: lowercase;
 }
 
 .menu__item--current {
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .menu__link {
-	color: #fff;
+	color: #999;
 }
 
 .menu__link:focus,
 .menu__link:hover {
-	color: #1f1f21;
+	color: #fff;
 }
 
 .info {
