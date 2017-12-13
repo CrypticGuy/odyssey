@@ -155,7 +155,7 @@ a:focus {
 .room__side--back {
 	width: 100vw;
 	height: 100vh;
-	background: #eee;
+	background: #000;
 	box-shadow: 0 0 0 2px #000;
 	/*transform: translate3d(0, 0, -4000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);*/
 	/* Rotation due to rendering bug in Chrome when loader slides up (images seem cut off) */
@@ -307,14 +307,14 @@ a:focus {
 	margin: 0;
 	padding: 0 0 0 5vw;
 	text-indent: -5vw;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.06em;
 	text-transform: lowercase;
 	color: #fff;
 }
 
 .slide__title,
 .slide__date {
-	text-align: right;
+	/*text-align: right;*/
 }
 
 .slide__title {
@@ -323,7 +323,7 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	margin: 0.75em 0 0 0;
+	margin: 0.75em 0 0 10em;
 	color: #fff;
 }
 
@@ -339,9 +339,9 @@ a:focus {
 	font-size: 0.4em;
 	display: inline-block;
 	margin: 0.5em 0 0 0;
-	padding: 0.4em 0.5em 0.25em 0.5em;
+	/*padding: 0.4em 0.5em 0.25em 0.5em;*/
 	color: #fff;
-	background: #c2292e;
+	/*background: #c2292e;*/
 }
 
 /* Nav */
@@ -479,7 +479,7 @@ a:focus {
 		margin: 7vh 0 0 0;
 	}
 	.slide__name {
-		background: #000;
+		/*background: #000;*/
 
 		padding: 0 0 0 12vw;
 	}
