@@ -26,17 +26,17 @@ body {
         background-position: left; }
 
 .uno {
-  background: url(../img/CN.png) center center no-repeat;
+  background: url(../img/CN.png) right center no-repeat;
   background-size: cover; }
 
 .dos {
-  background: url(../img/GoT.png) center center no-repeat;
+  background: url(../img/GoT.png) right center no-repeat;
   background-size: cover; }
 
 .tres {
-  background: url(../img/MDC.png) center center no-repeat;
+  background: url(../img/MDC.png) right center no-repeat;
   background-size: cover; }
 
 .quat {
-  background: url(../img/hp.jpg) center center no-repeat;
+  background: url(../img/hp.jpg) right center no-repeat;
   background-size: cover; }
