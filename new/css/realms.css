@@ -6,6 +6,9 @@
   padding: 0;
   transition: all .35s ease-in-out; }
 
+body {
+  background: #000; }
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -15,17 +18,25 @@
     width: 100%; }
     .hero .row .element {
       display: table-cell;
+      opacity: .3;
       width: 25%;
       cursor: pointer; }
+      .hero .row .element:hover {
+        opacity: 1;
+        background-position: left; }
 
 .uno {
-  background: #fff; }
+  background: url(../img/CN.png) center center no-repeat;
+  background-size: cover; }
 
 .dos {
-  background: #000; }
+  background: url(../img/GoT.png) center center no-repeat;
+  background-size: cover; }
 
 .tres {
-  background: #00adef; }
+  background: url(../img/MDC.png) center center no-repeat;
+  background-size: cover; }
 
 .quat {
-  background: #ff0; }
+  background: url(../img/hp.jpg) center center no-repeat;
+  background-size: cover; }
