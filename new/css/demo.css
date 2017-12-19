@@ -532,4 +532,14 @@ a:focus {
 	}
 }
 
+.jou {
+	color: #fff;
+	transition: all .35s ease-in-out;
+	padding-bottom: 10px;
+	border-bottom: 4px solid rgba(255,255,255, 0.5);
+}
 
+.jou:hover {
+	padding-bottom: 5px;
+
+}
