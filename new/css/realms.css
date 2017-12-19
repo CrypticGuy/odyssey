@@ -22,21 +22,25 @@ body {
       width: 25%;
       cursor: pointer; }
       .hero .row .element:hover {
-        opacity: 1;
+        opacity: 1 !important;
         background-position: left; }
 
 .uno {
   background: url(../img/CN.png) right center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  animation-delay: 1s; }
 
 .dos {
-  background: url(../img/GoT.png) right center no-repeat;
+  background: url(../img/GoT.png) center center no-repeat;
+  animation-delay: 1.5s;
   background-size: cover; }
 
 .tres {
+  animation-delay: 2s;
   background: url(../img/MDC.png) right center no-repeat;
   background-size: cover; }
 
 .quat {
+  animation-delay: 2.5s;
   background: url(../img/hp.jpg) right center no-repeat;
   background-size: cover; }
