@@ -168,6 +168,23 @@ a:focus {
 	transform-origin: 100% 50%;
 }
 
+.button {
+	transition: all 0.35s ease-in-out;
+	border: 2px solid;
+	color: #c2292e;
+	padding: 15px 35px !important;
+	font-family: monospace;
+	letter-spacing: 4px;
+	position: relative;
+	top: 0;
+	font-size: .9rem;
+}
+.button:hover {
+	top: -5px;
+	box-shadow: -5px 5px 0 #c2292e;
+	background: #fff; 
+	border: 2px solid #fff;
+}
 .room__side--left {
 	justify-content: flex-start;
 	transform: rotate3d(0, 1, 0, 90deg);
@@ -339,8 +356,8 @@ a:focus {
 .slide__number {
 	font-size: 0.4em;
 	display: inline-block;
-	margin: 0.5em 0 0 0;
-	/*padding: 0.4em 0.5em 0.25em 0.5em;*/
+	margin: 1em 0 0 0;
+	padding: 0.4em 0.5em 0.25em 0.5em;
 	color: #fff;
 	/*background: #c2292e;*/
 }
