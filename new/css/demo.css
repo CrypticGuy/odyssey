@@ -239,6 +239,9 @@ a:focus {
 .kuku-header__title {
 	font-size: 1.165em;
 	font-weight: normal;
+	color: #fff;
+	letter-spacing: 2px !important;
+	text-transform: uppercase;
 	margin: 0.5em 0 0 0;
 }
 
