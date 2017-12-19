@@ -61,6 +61,7 @@
 	DOM.menuItems = DOM.menuOverlay.querySelectorAll('.menu > .menu__item');
 	// The info button.
 	DOM.infoCtrl = DOM.content.querySelector('.btn--info');
+	DOM.infoLink = DOM.content.querySelector('.jou');
 	// The info overlay.
 	DOM.infoOverlay = DOM.content.querySelector('.overlay--info');
 	// The info text.
