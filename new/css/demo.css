@@ -471,4 +471,15 @@ a:focus {
 .jou:hover {
   padding-bottom: 5px; }
 
+.center {
+  font-size: 10vw;
+  font-family: Montserrat;
+  text-transform: uppercase !important; }
+
+.kuku-header__title > img {
+  height: 50px;
+  vertical-align: middle;
+  margin-top: -10px;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=demo.css.map */

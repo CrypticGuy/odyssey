@@ -69,9 +69,9 @@
             this.DOM.svg.innerHTML = `
                 <defs>
                 <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#00adef">
+                    <stop offset="0%" stop-color="#141E30">
                     </stop>
-                    <stop offset="100%" stop-color="#fff">
+                    <stop offset="100%" stop-color="#243B55">
                     </stop>
                 </linearGradient>
                 </defs>

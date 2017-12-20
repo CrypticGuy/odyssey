@@ -270,7 +270,7 @@ a.demo--current {
 	align-content: left;
 	justify-content: left;
 	align-items: left;
-	padding-top: 11rem;
+	padding-top: 10rem;
 	padding-left: 15rem;
 	padding-right: 20rem;
 }
@@ -353,10 +353,11 @@ a.demo--current {
   border: 2px solid;
   color: #c2292e;
   padding: 15px 35px !important;
-  font-family: monospace;
+  font-family: GT Walsheim;
   letter-spacing: 4px;
   position: relative;
   top: 0;
+  text-transform: uppercase;
   font-size: .9rem; }
 
 .slide__link:hover {
