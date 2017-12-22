@@ -4,16 +4,25 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+@font-face {
+	font-family: "Montserrat";
+	src:url(../../css/head_bold.ttf);
+}
 
+@font-face {
+	font-family: "GT Walsheim";
+	src:url(../../css/gt.ttf);
+}
 body {
-	font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
+	font-family: GT Walsheim;
 	color: #393a3e;
 	background: lavender;
 }
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #999;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 	outline: none;
 }
 
@@ -55,7 +64,7 @@ a:focus {
 	width: 100%;
 	height: 100%;
 	padding: 25px 50px;
-	background: url(../img/bg_lavender.jpg) no-repeat top left;
+	/*background: url(../img/bg_lavender.jpg) no-repeat top left;*/
 	background-size: auto 100%;
 }
 
@@ -67,7 +76,7 @@ a:focus {
 }
 
 /* Header */
-.codrops-header {
+.kuku-header {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -76,10 +85,11 @@ a:focus {
 	text-align: right;
 }
 
-.codrops-header__info {
+.kuku-header__info {
 	font-family: 'Playfair Display', serif;
 	font-size: 2.5em;
 	font-weight: 700;
+	opacity: 0;
 	font-style: italic;
 	position: relative;
 	max-width: 400px;
@@ -87,9 +97,8 @@ a:focus {
 	text-align: right;
 }
 
-.codrops-header__info::after {
-	content: '01';
-	font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
+.kuku-header__info::after {
+	font-family: GT Walsheim;
 	font-size: 8em;
 	font-weight: bold;
 	font-style: normal;
@@ -101,7 +110,7 @@ a:focus {
 	color: #fff;
 }
 
-.codrops-header__deco {
+.kuku-header__deco {
 	font-size: 2em;
 	line-height: 1;
 	padding: 1em 0;
@@ -110,21 +119,28 @@ a:focus {
 	writing-mode: vertical-rl;
 }
 
-.codrops-header__title {
-	font-size: 8.5em;
-	line-height: 0.8;
-	margin: 0 -7px 0;
-	padding: 0;
+.kuku-header__title {
+	background: #5f2c82;
+	font-family: GT Walsheim;
+	letter-spacing: -.02em;
+	font-size: 8em;
+	background: #EDE574;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-weight: normal;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.codrops-header__tagline {
+.kuku-header__tagline {
 	width: 50%;
 	margin: 0 0 0 auto;
 	padding: 0;
 }
 
 /* Top Navigation Style */
-.codrops-links {
+.kuku-links {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -132,11 +148,11 @@ a:focus {
 	white-space: nowrap;
 }
 
-.codrops-icon {
+.kuku-icon {
 	display: block;
 }
 
-.codrops-icon:last-child {
+.kuku-icon:last-child {
 	margin: 0 0 0 2em;
 }
 
@@ -189,7 +205,7 @@ a:focus {
 	font-size: 0.8em;
 	display: block;
 	margin: 0 2em 0 0;
-	color: #bcb8e8;
+	color: #999;
 }
 
 .demo {
@@ -325,7 +341,7 @@ a:focus {
 
 /* Individual demos */
 .demo-2 {
-	background: #fff4d7;
+	background: #000;
 }
 
 .demo-2 .view {
@@ -333,15 +349,15 @@ a:focus {
 }
 
 .demo-2 .content {
-	background-image: url(../img/bg_yellow.jpg);
+	/*background-image: url(../img/bg_yellow.jpg);*/
 }
 
-.demo-2 .codrops-header__info::after {
-	content: '02';
+.demo-2 .kuku-header__info::after {
+	/*content: '02';*/
 	color: #fff;
 }
 
-.demo-2 .codrops-header__deco,
+.demo-2 .kuku-header__deco,
 .demo-2 a:hover,
 .demo-2 a:focus {
 	color: #ff764b;
@@ -349,7 +365,11 @@ a:focus {
 
 .demo-2 .deco__text,
 .demo-2 .demos__text {
-	color: #d8c184;
+	color: #fff;
+}
+
+.demos__text {
+
 }
 
 .demo-2 .demo--current::before {
@@ -360,114 +380,7 @@ a:focus {
 	color: #ff764b;
 }
 
-.demo-3 {
-	color: #fc0;
-	background: #2a3137;
-}
 
-.demo-3 a {
-	color: #fff;
-}
-
-.demo-3 a:hover,
-.demo-3 a:focus,
-.demo-3 .btn--menu:hover {
-	color: #fc0;
-}
-
-.demo-3 .view {
-	margin: 0;
-	padding: 5vw 5vw calc(10vw + 1em);
-}
-
-.demo-3 .content {
-	padding: 0;
-}
-
-.demo-3 .codrops-header {
-	justify-content: flex-end;
-	align-items: flex-start;
-	width: 100%;
-	height: calc(100% + 3.25em);
-	text-align: left;
-}
-
-.demo-3 .codrops-header__title {
-	font-family: 'Poppins', sans-serif;
-	font-size: 7em;
-	line-height: 0.6;
-	margin: auto 0 0 -40px;
-	padding: 0.2em 0 0 0;
-}
-
-.demo-3 .codrops-header__tagline {
-	font-size: 1.5em;
-	margin: 0.25em 0 0 -0.3em;
-}
-
-.demo-3 .btn--menu {
-	font-size: 1em;
-	top: auto;
-	bottom: 0;
-	left: 50%;
-	display: block;
-	margin: 0 -0.75em 1em;
-	color: #fbf9fa;
-}
-
-.demo-3 .content {
-	background: url(../img/img4.jpg) no-repeat 50% 20%;
-	background-size: cover;
-}
-
-.demo-3 .codrops-links {
-	align-self: flex-end;
-	margin: 1.5em 1.5em auto;
-}
-
-.demo-3 .demos {
-	margin: 1em 0 0;
-}
-
-.demo-3 .demo:first-child {
-	margin: 0;
-}
-
-.demo-3 .demo.demo--current {
-	color: #2a3137;
-}
-
-.demo-3 .demo--current::before {
-	background: #fc0;
-}
-
-.demo-3 .btn--back {
-	color: #6c7d8c;
-	top: 0.5em;
-	right: 0.5em;
-}
-
-.demo-3 .btn--back .icon {
-	transform: rotate(-90deg);
-}
-
-.demo-3 .codrops-header__deco {
-	font-size: 2.25em;
-	position: absolute;
-	right: -0.575em;
-	bottom: 2em;
-	color: #fc0;
-}
-
-.demo-3 .codrops-header::after {
-	content: '03';
-	font-size: 5em;
-	font-weight: bold;
-	position: absolute;
-	top: 0;
-	left: -40px;
-	color: #fff;
-}
 
 .box {
 	position: relative;
@@ -514,34 +427,34 @@ a:focus {
 		flex-direction: column;
 		padding: 10px;
 	}
-	.codrops-header__info {
+	.kuku-header__info {
 		font-size: 1.15em;
 	}
 	.deco__text,
 	.demos__text {
 		display: none;
 	}
-	.codrops-links {
+	.kuku-links {
 		margin: 0 0 1em;
 	}
-	.codrops-icon {
+	.kuku-icon {
 		font-size: 1em;
 	}
-	.codrops-header__deco {
+	.kuku-header__deco {
 		font-size: 1.25em;
 	}
-	.codrops-header__title {
+	.kuku-header__title {
 		font-size: 5.5em;
 		margin: 0 -4px;
 	}
-	.codrops-header__tagline {
+	.kuku-header__tagline {
 		width: auto;
 	}
 	.demos {
 		align-items: flex-start;
 		margin-top: 1em;
 	}
-	.codrops-header__info::after {
+	.kuku-header__info::after {
 		font-size: 7em;
 	}
 	.poster__box {
@@ -579,19 +492,19 @@ a:focus {
 	.column__title {
 		margin: 1em 0 0;
 	}
-	.demo-3 .codrops-header__title {
+	.demo-3 .kuku-header__title {
 		font-size: 2em;
 		margin: 0;
 	}
-	.demo-3 .codrops-header__tagline {
+	.demo-3 .kuku-header__tagline {
 		font-size: 1em;
 		margin-left: 0;
 	}
-	.demo-3 .codrops-header::after {
+	.demo-3 .kuku-header::after {
 		font-size: 3em;
 		left: 10px;
 	}
-	.demo-3 .codrops-header__deco {
+	.demo-3 .kuku-header__deco {
 		font-size: 0.85em;
 	}
 }
