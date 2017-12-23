@@ -332,7 +332,17 @@ a:focus {
 	text-transform: lowercase;
 	color: #fff;
 }
+.slide__name >  img {
+	height: 400px;
+	margin-left: 45%;
+}
 
+@media screen and (max-width: 50em) {
+	.slide__name >  img {
+		height: 350px;
+		margin-left: 20%;
+	}	
+}
 .slide__title,
 .slide__date {
 	/*text-align: right;*/
