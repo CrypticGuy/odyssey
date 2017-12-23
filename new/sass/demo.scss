@@ -334,13 +334,40 @@ a:focus {
 }
 .slide__name >  img {
 	height: 400px;
-	margin-left: 45%;
+	margin-left: 43%;
 }
 
 @media screen and (max-width: 50em) {
 	.slide__name >  img {
 		height: 350px;
 		margin-left: 20%;
+	}	
+}
+
+@media screen and (max-width: 970px) {
+	.slide__name >  img {
+		height: 350px;
+		margin-left: 38%;
+	}	
+}
+
+@media screen and (max-width: 800px) {
+	.slide__name >  img {
+		height: 350px;
+		margin-left: 30%;
+	}	
+}
+
+@media screen and (max-width: 730px) {
+	.slide__name >  img {
+		height: 350px;
+		margin-left: 25%;
+	}	
+}
+@media screen and (max-width: 650px) {
+	.slide__name >  img {
+		height: 350px;
+		margin-left: 15%;
 	}	
 }
 .slide__title,
