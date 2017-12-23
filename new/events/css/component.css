@@ -46,6 +46,7 @@
 	height: 100%;
 }
 .tabsnav--vertical .tabsnav__item {
+	/*padding: 10px 101px;*/
 	flex: none;
 	width: 100px;
 	height: 100%;
@@ -117,9 +118,22 @@
 	margin: 0 0 10px 0;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 1130px) {
 	/* don't show a background if on mobile */
 	.tabsnav {
 		background: none;
 	}
+	.tabsnav--vertical .tabsnav__item {
+		width: 50px;
+	}
+}
+@media screen and (max-width: 1314px) {
+	.kuku-header__title {
+		font-size: 5em;
+		margin-right: 0;
+		letter-spacing: 0;
+	}
+}
+.icon--cross {
+	fill: #fff;
 }

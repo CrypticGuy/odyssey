@@ -1,9 +1,12 @@
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out; }
 
 body {
@@ -11,6 +14,7 @@ body {
 
 .hero {
   height: 100vh;
+  -webkit-animation-delay: .2s;
   animation-delay: .2s;
   width: 100%;
   z-index: 10;
@@ -46,9 +50,11 @@ body {
 @font-face {
   font-family: "Montserrat";
   src: url(head_bold.ttf); }
+
 @font-face {
   font-family: "GT Walsheim";
   src: url(gt.ttf); }
+
 .overlay {
   height: 100vh;
   width: 100%;

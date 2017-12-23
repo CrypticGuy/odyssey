@@ -179,6 +179,14 @@ a:focus {
 	top: 0;
 	font-size: .9rem;
 }
+@media screen and (max-width: 1128px) {
+	.slide__title > span {
+		margin-bottom: 20px !important;
+	}
+	.slide__title {
+		display: flex-end !important;
+	}
+}
 .button:hover {
 	top: -5px;
 	box-shadow: -5px 5px 0 $prim;
@@ -369,11 +377,15 @@ a:focus {
 		height: 350px;
 		margin-left: 15%;
 	}	
+	.slide__title,
+	.slide__date {
+		text-align: right;
+	}
+	.slide__date {
+		margin-top: 30px !important;
+	}
 }
-.slide__title,
-.slide__date {
-	/*text-align: right;*/
-}
+
 
 .slide__title {
 	font-size: 3vw;
