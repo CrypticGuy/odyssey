@@ -68,7 +68,7 @@ a:focus {
 	background-size: auto 100%;
 }
 
-
+ 
 .deco__text {
 	font-size: 0.8em;
 	line-height: 1;
@@ -416,9 +416,11 @@ a:focus {
 .tabscontent__item:nth-child(3) .box {
 	background-image: url(../img/portrait3.jpg);
 }
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 60em) {
 	.kuku-header__title {
-		font-size: 2rem;
+		font-size: 2em;
+		letter-spacing: 0;
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 40em) {
@@ -427,9 +429,6 @@ a:focus {
 		height: auto;
 		min-height: calc(100vh - 69px);
 		margin: 0;
-	}
-	.demo-3 .view {
-		height: calc(100vh - 69px);
 	}
 	.content {
 		flex-direction: column;
