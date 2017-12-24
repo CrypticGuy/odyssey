@@ -431,18 +431,26 @@ li.selected .cd-project-title,
 .cd-project-info {
 	display: none;
 	padding: 4em 0;
+	font-family: $secondary-font;
 	background-color: $color-6;
-	color: tint($color-5, 40%);
+	// color: tint(#000, 40%);
+	color: #010101;
 
 	.content-visible & {
 		display: block;
 	}
 
 	p {
+		font-size: 1.333em;
 		width: 90%;
 		max-width: 800px;
 		margin: 0 auto;
-		line-height: 2;
+		line-height: 1.3333333;
+		span {
+			font-size: 1.5em;
+			font-family: $primary-font;
+			// letter-spacing: -2px;
+		}
 	}
 }
 

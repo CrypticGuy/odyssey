@@ -538,15 +538,20 @@ li.selected .cd-project-title,
 .cd-project-info {
   display: none;
   padding: 4em 0;
+  font-family: "GT", serif;
   background-color: #ffffff;
-  color: #7d7c7b; }
+  color: #010101; }
   .content-visible .cd-project-info {
     display: block; }
   .cd-project-info p {
+    font-size: 1.333em;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 2; }
+    line-height: 1.3333333; }
+    .cd-project-info p span {
+      font-size: 1.5em;
+      font-family: Montserrat; }
 
 .cd-projects-container .scroll {
   display: block;
