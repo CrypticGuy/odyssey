@@ -79,17 +79,29 @@
 .tabsnav--zeru {
 	background: #222525;
 }
+.tabsnav--zeru .tabsnav__item:nth-child(4) .tabsnav__bar {
+	background: #151515;
+}
+.tabsnav--zeru .tabsnav__item:nth-child(5) .tabsnav__bar {
+	background: #222;
+}
+.tabsnav--zeru .tabsnav__item:nth-child(6) .tabsnav__bar {
+	background: #252525;
+}
+.tabsnav--zeru .tabsnav__item:nth-child(7) .tabsnav__bar {
+	background: #333;
+}
 
-.tabsnav--zeru .tabsnav__item:first-child .tabsnav__bar {
-	background: #161919;
+.tabsnav--zeru, .tabsnav__item:first-child, .tabsnav__bar {
+	background: #000;
 }
 
 .tabsnav--zeru .tabsnav__item:nth-child(2) .tabsnav__bar {
-	background: #222525;
+	background: #050505;
 }
 
 .tabsnav--zeru .tabsnav__item:nth-child(3) .tabsnav__bar {
-	background: #2e3131;
+	background: #111;
 }
 
 .tabsnav--zeru .tabsnav__title {
