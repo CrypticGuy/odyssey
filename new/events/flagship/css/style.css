@@ -1,3 +1,11 @@
+@font-face {
+  src: url(../../../css/head_bold.ttf);
+  font-family: Montserrat; }
+
+@font-face {
+  src: url(../../../css/gt.ttf);
+  font-family: GT; }
+
 /* -------------------------------- 
 
 Primary style
@@ -12,7 +20,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: Montserrat;
   color: #ffffff;
   background-color: #262423; }
 
@@ -418,12 +426,12 @@ Projects
     transition: transform 0.3s 0.3s;
     transition: transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s; }
   .cd-project-title h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 700; }
   .cd-project-title p {
-    font-size: 1.4rem;
-    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    font-family: "GT", serif;
     font-style: italic;
     line-height: 1.2;
     padding: .4em 2em;
@@ -666,7 +674,7 @@ li.selected .cd-project-title,
     -o-transition: background 0.2s;
     transition: background 0.2s;
     color: #ffffff;
-    font-family: "Merriweather", serif;
+    font-family: "GT", serif;
     font-size: 2.4rem;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
