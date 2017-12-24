@@ -133,16 +133,27 @@
 @media screen and (max-width: 1130px) {
 	/* don't show a background if on mobile */
 	.tabsnav {
-		background: none;
+		/*background: none;*/
 	}
 	.tabsnav--vertical .tabsnav__item {
-		width: 60px;
+		width: 57px;
+	}
+	.kuku-header__tagline {
+		color: #fff;
+		margin-left: 15px;
+	}
+	.kuku-header {
+		align-items: center;
+	}
+	.kuku-header__title {
+		font-size: 4rem !important;
 	}
 }
 @media screen and (max-width: 1314px) {
 	.kuku-header__title {
-		font-size: 5em;
-		margin-right: 0;
+		font-size: 3em;
+
+		/*margin-right: 10px;*/
 		letter-spacing: 0;
 	}
 }
