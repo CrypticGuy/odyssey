@@ -124,7 +124,7 @@
 		background: none;
 	}
 	.tabsnav--vertical .tabsnav__item {
-		width: 50px;
+		width: 60px;
 	}
 }
 @media screen and (max-width: 1314px) {
