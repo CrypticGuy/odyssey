@@ -353,6 +353,7 @@ a:focus {
   line-height: 0.8;
   margin: 0;
   padding: 0 0 0 5vw;
+  font-family: Montserrat;
   text-indent: -5vw;
   letter-spacing: -0.06em;
   text-transform: lowercase;
@@ -385,12 +386,15 @@ a:focus {
 @media screen and (max-width: 650px) {
   .slide__name > img {
     height: 350px;
-    margin-left: 15%; }
-  .slide__title,
+    margin-top: 100px;
+    margin-left: 5%; }
+  .slide__title > span {
+    font-size: 1.4rem; }
   .slide__date {
-    text-align: right; }
-  .slide__date {
-    margin-top: 30px !important; } }
+    margin-top: 30px !important; }
+  .button {
+    font-size: 1.2em;
+    padding: 10px 15px !important; } }
 
 .slide__title {
   font-size: 3vw;
