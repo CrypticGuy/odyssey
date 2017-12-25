@@ -233,6 +233,9 @@ a:focus {
 .mew {
 	transform: translate3d(0,0,10px);
 }
+button {
+	cursor: pointer;
+}
 /* Content */
 .content {
 	position: absolute;
