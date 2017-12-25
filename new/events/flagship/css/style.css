@@ -25,8 +25,43 @@ body {
   background-color: #262423; }
 
 a {
-  color: #a8ae7e;
+  color: #222;
   text-decoration: none; }
+
+.mail--link {
+  -webkit-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+  line-height: 1.5;
+  border-bottom: 2px solid rgba(34, 34, 34, 0.2); }
+  .mail--link:hover {
+    border-bottom: 2px solid rgba(255, 51, 85, 0.2);
+    color: #f35; }
+
+.register--button {
+  background: #f35;
+  color: #fff;
+  -webkit-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: -7px;
+  padding: 15px 35px;
+  -webkit-box-shadow: 0 7px rgba(255, 51, 85, 0.7);
+  box-shadow: 0 7px rgba(255, 51, 85, 0.7); }
+  .register--button:hover {
+    top: -5px;
+    -webkit-box-shadow: 0 5px rgba(255, 51, 85, 0.7);
+    box-shadow: 0 5px rgba(255, 51, 85, 0.7);
+    background: rgba(255, 51, 85, 0.9); }
+  .register--button:active {
+    top: -1px;
+    -webkit-box-shadow: 0 1px rgba(255, 51, 85, 0.7);
+    box-shadow: 0 1px rgba(255, 51, 85, 0.7);
+    background: rgba(255, 51, 85, 0.9); }
 
 /* -------------------------------- 
 
@@ -549,9 +584,12 @@ li.selected .cd-project-title,
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.3333333; }
-    .cd-project-info p span {
+    .cd-project-info p .header {
       font-size: 1.5em;
       font-family: Montserrat; }
+    .cd-project-info p .rules--item {
+      display: block;
+      margin-bottom: 10px; }
 
 .cd-projects-container .scroll {
   display: block;

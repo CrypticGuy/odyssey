@@ -30,10 +30,42 @@ body {
 }
 
 a {
-	color: $color-2;
+	color: #222;
 	text-decoration: none;
 }
+.mail--link {
+	transition: all .35s ease-in-out;
+	line-height: 1.5;
+	border-bottom: 2px solid rgba(#222, 0.2);
+	&:hover {
+		border-bottom: 2px solid rgba(#f35, 0.2);
+		color: #f35;
+	}
+}
 
+.register--button {
+	background: #f35;
+	color: #fff;
+	transition: all .15s ease-in-out;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	letter-spacing: 2px;	
+	position: relative;
+	top: -7px;
+	padding: 15px 35px;
+	box-shadow: 0 7px rgba(#f35, 0.7);
+	&:hover {
+		top: -5px;
+		box-shadow: 0 5px rgba(#f35, 0.7);
+		background: rgba(#f35, 0.9);
+	}
+	&:active {
+		top: -1px;
+		box-shadow: 0 1px rgba(#f35, 0.7);
+		background: rgba(#f35, 0.9);
+	}
+
+}
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
@@ -446,10 +478,14 @@ li.selected .cd-project-title,
 		max-width: 800px;
 		margin: 0 auto;
 		line-height: 1.3333333;
-		span {
+		.header {
 			font-size: 1.5em;
 			font-family: $primary-font;
 			// letter-spacing: -2px;
+		}
+		.rules--item {
+			display: block;
+			margin-bottom: 10px;
 		}
 	}
 }
