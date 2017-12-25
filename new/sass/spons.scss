@@ -14,18 +14,16 @@ body {
     height: calc(100vh/3);
     width: 100%;
 }
-/* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.33%;
-    border: 2px solid #fff;
+    border: 2px solid rgba(#fff, 0.333333);
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     height: calc(100vh/3);
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -37,8 +35,9 @@ body {
 		background: url(../img/spons/#{$i}.png) center center no-repeat;
 		background-size: 30%;
 		&:hover {
-			background-size: 60%;
+			background-size: 50%;
 			filter: sepia(100%);
+			// background: 
 		}
 	}
 }
