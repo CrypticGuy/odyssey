@@ -225,13 +225,10 @@ a:focus {
   flex: none;
   /*max-width: 100%;*/
   /*max-height: 60%;*/
-  height: 100vh;
-  background: 100%;
+  opacity: 0.8;
   background-size: cover;
   /*margin: 0 5%;*/
-  /* transform: translate3d(0,0,10px); */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  /* transform: translate3d(0,0,10px); */ }
 
 /* Content */
 .content {
