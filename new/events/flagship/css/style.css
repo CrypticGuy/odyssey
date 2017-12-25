@@ -370,7 +370,7 @@ Projects
 .cd-project-title {
   position: absolute;
   width: 100%;
-  top: calc(15% - 20px);
+  top: calc(50% - 20px);
   left: 0;
   color: #ffffff;
   -webkit-transform: translateY(-37.5vh);

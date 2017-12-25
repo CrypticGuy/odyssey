@@ -328,7 +328,7 @@ Projects
 .cd-project-title {
 	position: absolute;
 	width: 100%;
-	top: calc(15% - 20px);
+	top: calc(50% - 20px);
 	left: 0;
 	color: $color-6;
 	@include transform(translateY(100vh*(2/$items - $items/2)/$items));
