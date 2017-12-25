@@ -547,7 +547,7 @@
 
 	// Preload all the images.
 	imagesLoaded(DOM.scroller, function() {
-		var extradelay = 0;
+		var extradelay = 500;
 		// Slide out loader.
 		anime({
 			targets: DOM.loader,
