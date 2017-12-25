@@ -13,6 +13,10 @@ body {
   height: 100vh;
   overflow: hidden; }
 
+.white {
+  background: #fff;
+  border: none !important; }
+
 a {
   text-decoration: none;
   color: #000;
