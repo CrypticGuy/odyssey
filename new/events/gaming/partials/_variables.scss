@@ -8,9 +8,18 @@ $color-5: #262423; // Dune
 $color-6: #ffffff; // White
 
 // fonts 
+@font-face {
+	src: url(../../../css/head_bold.ttf);
+	font-family: Montserrat;
+}
 
-$primary-font: 'PT Sans', sans-serif;
-$secondary-font: 'Merriweather', serif;
+@font-face {
+	src: url(../../../css/gt.ttf);
+	font-family: GT;
+}
+
+$primary-font: Montserrat;
+$secondary-font: 'GT', serif;
 
 // Number of projects 
 

@@ -75,7 +75,8 @@ jQuery(document).ready(function($){
 	function openProject(projectPreview) {
 		var projectIndex = projectPreview.index();
 		projects.children('li').eq(projectIndex).add(projectPreview).addClass('selected');
-		
+		$(".cd-project-title").css("top", "calc(15% - 20px)");
+
 		if( transitionsNotSupported ) {
 			projectPreviews.addClass('slide-out').removeClass('selected');
 			projects.children('li').eq(projectIndex).addClass('content-visible');
@@ -90,7 +91,7 @@ jQuery(document).ready(function($){
 			$(this).removeClass('content-visible').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
 			slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
 		});
-
+		$(".cd-project-title").css("top", "calc(50% - 20px)");
 		//if browser doesn't support CSS transitions...
 		if( transitionsNotSupported ) {
 			projectPreviews.removeClass('slide-out');
