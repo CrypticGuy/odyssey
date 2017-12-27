@@ -17,7 +17,8 @@
 body {
 	font-family: GT Walsheim;
 	color: #393a3e;
-	background: url(../img/bg_events.jpg) center center no-repeat !important;
+	/*opacity: .1;*/
+	background: #000 url(../img/bg_events.jpg) right center no-repeat !important;
 	background-size: cover; 
 }
 

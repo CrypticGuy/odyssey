@@ -363,13 +363,13 @@ Projects
 
 .cd-projects-previews li:nth-of-type(5) a, 
 .cd-projects > li:nth-of-type(5) .preview-image {
-	background: $color-5 url(../img/reverbe.png) no-repeat center center;
+	background: $color-5 url(../img/reverbe.png) no-repeat 0 -200px;
 	background-size: cover;
 }
 
 .cd-projects-previews li:nth-of-type(6) a, 
 .cd-projects > li:nth-of-type(6) .preview-image {
-	background: $color-1 url(../img/acap.png) no-repeat center center;
+	background: $color-1 url(../img/acap.png) no-repeat 0 -300px;
 	background-size: cover;
 }
 
