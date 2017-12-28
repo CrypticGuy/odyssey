@@ -8,6 +8,10 @@
 body {
     overflow-x: hidden; 
 }
+@font-face {
+    src: url(gt.ttf);
+    font-family: GT;
+}
 .hero {
     height: 45vh;
     color: #fff;
@@ -52,8 +56,8 @@ body {
         }
         .copy {
             font-size: 1.5rem;
-            font-family: Source Sans Pro;
-            font-style: italic;
+            font-family: GT;
+            // font-style: italic;
             color: rgba(#fff, 0.6)
         }
     }
@@ -75,7 +79,7 @@ a {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none;
-    font-family: Source Sans Pro;
+    font-family: GT;
     border-bottom: 1px solid rgba(#fff, 0.4);
 }
 @for $i from 1 through 5 {
