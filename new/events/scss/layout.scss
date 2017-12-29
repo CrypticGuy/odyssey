@@ -12,7 +12,7 @@ $secondary-font: GT;
 	display: none;
 	padding: 4em 0;
 	font-family: $secondary-font;
-	background-color: #101010;
+	background-color: #101010 !important;
 	// color: tint(#000, 40%);
 
 	.content-visible & {
@@ -22,14 +22,14 @@ $secondary-font: GT;
 	p {
 		font-size: 1.333em;
 		width: 90%;
-		color: rgba(#fff, 0.7);
+		color: rgba(#fff, 0.7) !important;
 		max-width: 800px;
 		margin: 0 auto;
 		line-height: 1.3333333;
 		.header {
-			font-size: 2em;
-			color: #f3e5b1;
-			border-bottom: 3px solid rgba(#fff, 0.1);
+			font-size: 2em !important;
+			color: #f3e5b1 !important;
+			border-bottom: 3px solid rgba(#fff, 0.1)!important;
 			font-family: $primary-font;
 			// letter-spacing: -2px;
 		}
@@ -40,7 +40,7 @@ $secondary-font: GT;
 	}
 }
 .cd-projects-container .scroll {
-	display:none;
+	display:none !important;
 }
 
 .mail--link {
@@ -79,5 +79,4 @@ $secondary-font: GT;
 		box-shadow: 0 1px rgba(#f35, 0.7);
 		background: rgba(#f35, 0.9);
 	}
-
 }
