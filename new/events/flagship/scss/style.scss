@@ -72,7 +72,9 @@ Patterns - reusable parts of our design
 
 -------------------------------- */
 
+
 .cd-text-replace {
+	// display: none !important;
 	/* replace text with image */
 	color: transparent;
 	text-indent: 100%;
