@@ -78,11 +78,11 @@ a:focus {
 	fill: #fff;
 }
 
-.btn--nav:hover .nav__triangle {
+.nav__triangle {
 	transform: translate3d(-54px,0,0);
 }
 
-.btn--nav:hover .nav__line {
+.nav__line {
 	transform: translate3d(17px,0,0);
 }
 
