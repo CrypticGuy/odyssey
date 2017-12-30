@@ -160,7 +160,12 @@ body {
 	}
 }
 .back__home {
-	color: #efefef;
+	// color: #efefef;
+	position: absolute;
+	top: 0px;
+	padding: 10px 30px;
+	background: #fff;
+	color: #222;
 	text-decoration: none;
 	border-bottom: 2px solid rgba(#fff, 0.2);
 }
