@@ -562,7 +562,7 @@
 		// Slide out loader.
 		anime({
 			targets: DOM.loader,
-			duration: 600,
+			duration: 0,
 			easing: 'easeInOutCubic',
 			delay: extradelay,
 			translateY: '-100%',
