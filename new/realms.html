@@ -6,10 +6,30 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/realms.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<style>
+	@font-face {
+		src: url(css/gt.ttf);
+		font-family: GT;
+	}
+		.back--home {
+			position: fixed;
+			padding: 20px 40px;
+			background-color: #fff;
+			color: #222;
+			font-family: GT;
+			z-index: 1000;
+		}
+		a {
+			text-decoration: none;
+			color: #222;
+			text-transform: uppercase;
+		}
+	</style>
 </head>
 <body>
 	<section class="hero">
 		<div class="row">
+			<span class="back--home"><a href="/">Back Home</a></span>
 			<div class="element uno"></div>
 			<div class="element dos"></div>
 			<div class="element tres"></div>
@@ -20,12 +40,7 @@
 		<!-- CN -->
 		<div class="centered">
 			<p class="lead">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 			</p>
 			<p class="close">
 				close
@@ -37,17 +52,16 @@
 		$(".overlay").addClass("shown");
 	});
 	$(".close").on("click", function() {
-		$(".element").addClass("animated fadeIn");
+		// $(".element").addClass("animated fadeIn");
 		$(".overlay").removeClass("shown");
-
 	});
 </script>
-	<script>
+<!-- 	<script>
 		$(".element").hover(function(){
-			$(this).removeClass("fadeIn");
+			// $(this).removeClass("fadeIn");
 		}, function() {
-			$(this).addClass("fadeIn");
+			// $(this).addClass("fadeIn");
 		});
-	</script>
+	</script> -->
 </body>
 </html>

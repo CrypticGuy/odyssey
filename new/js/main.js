@@ -92,9 +92,9 @@
 		// Info view transform.
 		infoTransform = { translateX : 0, translateY : 0, translateZ : '200px', rotateX : '2deg', rotateY : 0, rotateZ : '4deg' },
 		// Room moving transition.
-		roomTransition = { speed: '0.4s', easing: 'ease' },
+		roomTransition = { speed: '0.3s', easing: 'ease' },
 		// View from top transition.
-		menuTransition = { speed: '1.5s', easing: 'cubic-bezier(0.2,1,0.3,1)' },
+		menuTransition = { speed: '1s', easing: 'cubic-bezier(0.2,1,0.3,1)' },
 		// Info transition.
 		infoTransition = { speed: '15s', easing: 'cubic-bezier(0.3,1,0.3,1)' },
 		// Tilt transition
@@ -374,7 +374,7 @@
 		anime.remove(DOM.menuOverlay);
 		anime({
 			targets: DOM.menuOverlay,
-			duration: 1000,
+			duration: 500,
 			easing: [0.25,0.1,0.25,1],
 			opacity: [0,1]
 		});
