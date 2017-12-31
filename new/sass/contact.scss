@@ -51,7 +51,7 @@ body {
 	color: #fff;
 	width: 100%;
 	padding: 7rem 25rem;
-	height: 100vh;
+	// height: 100vh;
 	h1 {
 		font-family: Montserrat;
 		font-size: 3.5rem;
@@ -80,7 +80,7 @@ body {
 	}
 }
 .cont:nth-child(2n) {
-	padding-left: 20rem;
+	padding-left: 2rem;
 }
 
 @media only screen and (max-width: 1371px)  {
@@ -95,7 +95,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 740px)  {
 	.cont:nth-child(2n) {
 		padding-left: 1rem;
 	}	
@@ -153,10 +153,28 @@ body {
 }
 @media only screen and (max-height: 900px)  {
 	.list .cont .name {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 	.list .cont .designation, .email, .number {
-		font-size: 1rem;
+		font-size: .5rem;
+	}
+	.hero .container h1{
+		font-size: 2rem;
+		letter-spacing: 0;
+	}
+	.list {
+		padding-top: 1rem;
+	}
+	.list h1 {
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 0;
+	}
+	.cont {
+		padding-top: 20px !important;
+	}
+	.hero {
+		height: 20vh; 
 	}
 }
 .back__home {
@@ -180,3 +198,6 @@ body {
 	padding-top: 10px;
 }
 
+@media only screen and (max-width: 900px)  {
+	
+}
