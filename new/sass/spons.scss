@@ -33,7 +33,7 @@ body {
     color: #fff;
     font-family: Roboto Condensed;
     display: table;
-    width: 100%;
+    width: 100vw;
     background: url(../img/spons/bg.jpg) bottom center no-repeat;
     background-size: cover; 
     // background: #5C258D;
@@ -55,7 +55,6 @@ body {
             font-size: 4.5rem;
             font-weight: normal;
             height: 81px;
-            // letter-spacing: 5.25px;
             line-height: 81.4px;
             margin-bottom: 15px;
             margin-left: 0px;
@@ -63,7 +62,6 @@ body {
             margin-top: 0px; // text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px;
             text-size-adjust: 100%;
             text-transform: uppercase;
-            width: 1215.75px;
             -webkit-font-smoothing: antialiased;
             -webkit-margin-after: 15px;
             -webkit-margin-before: 0px;
@@ -114,5 +112,28 @@ a {
 @media screen and (max-width: 1094px) {
     .list {
         padding:5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero .centered{
+        padding: 2rem;
+    }
+    .hero .centered .copy {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    } 
+    .hero .centered h1 {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .list {
+        padding:1rem 0rem;
+    }
+
+    .title_spons {
+        height: 100px;
     }
 }

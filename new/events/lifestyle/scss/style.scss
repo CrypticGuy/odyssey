@@ -336,7 +336,7 @@ Projects
 }
 .cd-projects-previews li:nth-of-type(2) a, 
 .cd-projects > li:nth-of-type(2) .preview-image {
-	background:url(../img/reverbe.png) no-repeat left 100px;
+	background:url(../img/reverbe.png) no-repeat left 0;
 	background-size: cover;
 	transition: background-size .25s ease-in-out;
 	// &:hover {
