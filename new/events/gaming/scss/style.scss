@@ -334,8 +334,23 @@ Projects
 .cd-projects .preview-image {
 	/* set a background image for each project */
 	background: url(../img/pwn.png) no-repeat;
-	background-position: 0 -200px;
+	background-position: 0 -201px;
 	// background-size: 90%;
+}
+@media screen and (max-width: 900px) {
+	.cd-projects-previews a, 
+	.cd-projects .preview-image {
+		/* set a background image for each project */
+		background: url(../img/pwn.png) top center no-repeat;
+		// background-position: -150px -50px;
+		background-size: 100%;
+	}	
+	.cd-projects-previews li:nth-of-type(2) a, 
+	.cd-projects > li:nth-of-type(2) .preview-image {
+		background:url(../img/mini.png) center center no-repeat;
+		background-position: -200px -200px;
+		background-size: 100%;
+	}
 }
 .cd-projects-previews li:nth-of-type(2) a {
 	background-position: 0 200px !important;
@@ -344,8 +359,9 @@ Projects
 .cd-projects-previews li:nth-of-type(2) a, 
 .cd-projects > li:nth-of-type(2) .preview-image {
 	background:url(../img/mini.png) no-repeat top center;
-	background-size: cover;
-	background-position: 0 -200px;
+	background-size: 100%;
+	// background-size: cover;
+	// background-position: 0 -200px;
 }
 .blacc {
 	color: #222;
